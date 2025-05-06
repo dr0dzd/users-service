@@ -1,0 +1,12 @@
+version: "14.88"
+
+services:
+  db:
+    container_name: pet_users
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: dr0zd
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: pet_users
