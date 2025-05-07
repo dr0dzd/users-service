@@ -11,7 +11,6 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/emptypb"
-	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 type Handler struct {
@@ -34,8 +33,6 @@ func (h *Handler) CreateUser(ctx context.Context, req *userpb.CreateUserRequest)
     User: &userpb.User{
       Id:    createdUser.ID.String(),
       Email: createdUser.Email,
-      CreatedAt: timestamppb.Now(),
-      UpdatedAt: timestamppb.Now(),
     },
   }, nil
 }

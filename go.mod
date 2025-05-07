@@ -3,7 +3,7 @@ module github.com/dr0dzd/users-service
 go 1.24.2
 
 require (
-	github.com/dr0dzd/project-protos v1.0.2
+	github.com/dr0dzd/project-protos v1.0.4
 	github.com/golang/protobuf v1.5.4
 	github.com/google/uuid v1.6.0
 	google.golang.org/grpc v1.72.0
